@@ -1,0 +1,54 @@
+a {
+    color: #555;
+    font-size: 14px;
+}
+.top{
+    height:33px;
+    border-bottom: 1px solid #ebebeb;
+}
+.top .left{
+    float: left;
+}
+.top .right{
+    float: right;
+}
+.top span{
+    color: #555;
+    font-size: 14px;
+}
+.main{
+    font-size:0;
+}
+.main .input-search{
+    width:550px;
+    height: 40px;
+    border:1px solid #b8b8b8;
+    vertical-align: middle;
+}
+.main .logo{
+    width:270px;
+    height:129px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.main .btn-search{
+    background-color: #38f;
+    border:none;
+    color: white;
+    font-size:18px;
+    width:102px;
+    height:40px;
+    vertical-align: middle;
+}
+.logo-container,.search{
+    text-align: center;
+}
+.footer{
+    margin-top: 300px;
+}
+.footer .footer-top{
+    text-align: center;
+}
+.footer .footer-bottom{
+    text-align: center;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十一课.Table进阶</title>
+        <style>
+            table,tr,td,th{
+                border:solid 1px blueviolet;
+                border-collapse:collapse;
+            }
+            table{
+                width:500px;
+            }
+            thead tr:nth-child(even){
+                color:white;
+            }
+            td{
+                text-align: center;
+                color:rgba(0,0,0,0.8)
+            }
+            .memo{
+                text-align: left;    
+            }
+            tr:nth-child(even){
+                background-color: blueviolet;
+            }
+            tr:nth-child(even) td{
+                color:white;
+            }
+            tr:hover{
+                background-color: rgb(38, 6, 68);
+                color:white;
+            }
+            tr:hover td, tr:hover th{
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">2019年 XX班 课程表</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>周一</th>
+                    <th>周二</th>
+                    <th>周三</th>
+                    <th>周四</th>
+                    <th>周五</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">上午</td>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="5">午休</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">下午</td>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>音乐</td>
+                    <td>英语</td>
+                    <td>体育</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>备注</td>
+                    <td colspan="5" class="memo">
+                        <ul>
+                            <li>值日生每天都要认真打扫教室</li>
+                            <li>值日小组长负责检查整体卫生</li>
+                            <li>每天早晚各打扫一次</li>
+                        </ul>
+                    </td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

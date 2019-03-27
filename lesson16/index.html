@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十六课.个人博客</title>
+        <style>
+            body{
+                margin:0;
+            }
+            .nav{
+                background-color: rgba(0,0,0,0.8);
+                height:60px;
+            }
+            .nav ul{
+                right:0;
+                position:absolute;
+            }
+            .nav ul::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .cleanBoth{
+                clear: both;
+            }
+            .nav ul{
+                padding:0;
+                list-style: none;
+            }
+            .nav ul li{
+                float: left;
+            }
+            .nav ul li a{
+                color: white;
+                padding: 5px 20px;
+                text-decoration: none;
+            }
+            .banner{
+                height:200px;
+                background-color: #ccc;
+            }
+            .main{
+                padding: 20px;
+            }
+            .main .articles{
+               
+            }
+            .main .category{
+                border:solid 1px rgb(26, 26, 26);   
+                float: right;
+                padding:10px;
+                border-radius: 10px;
+            }
+            a{
+                margin:10px 0;
+                display: block;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(46, 46, 46);
+            }
+            .footer{
+                background-color: rgba(0,0,0,0.8);
+                height:60px;
+                line-height: 60px;
+                color:gray;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="#">个人随笔</a></li>
+                <li><a href="#">关于自己</a></li>
+            </ul>
+        </div>
+        <div class="banner"></div>
+        <div class="main">
+            
+            <div class="category">
+                    <ol>
+                        <li><a href="#">山地人-前端杂谈</a></li>
+                        <li><a href="#">跟山地人聊前端系列</a></li>
+                        <li><a href="#">跟山地人分析Element源码</a></li>
+                        <li><a href="#">跟山地人学JavaScript快速入门</a></li>
+                        <li><a href="#">跟山地人学JavaScript指南</a></li>
+                        <li><a href="#">跟山地人学React.js系列教程</a></li>
+                    </ol>
+            </div>
+            <div class="articles">
+                    <ol>
+                        <li><a href="#">人人都能学会的HTML+CSS</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">山老师讲CSS常用布局</a></li>
+                        <li><a href="#">Table的应用</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                    </ol>
+                    
+                    <ol>
+                        <li><a href="#">人人都能学会的HTML+CSS</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">山老师讲CSS常用布局</a></li>
+                        <li><a href="#">Table的应用</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                        <li><a href="#">如何制作个人博客站点</a></li>
+                    </ol>
+            </div>
+        </div>
+        <footer class="footer">
+            欢迎访问我的博客 &copy;2019
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十七课.Flex布局-justify-content</title>
+        <style>
+            .demo{
+                border:solid 2px orange;
+                display: flex;
+            }
+            .demo-start{
+                justify-content: flex-start;
+            }
+            .demo-center{
+                justify-content: center;
+            }
+            .demo-end{
+                justify-content: flex-end;
+            }
+            .demo-round{
+                justify-content: space-around;
+            }
+            .demo-between{
+                justify-content: space-between;
+            }
+            .demo-evenly{
+                justify-content: space-evenly;
+            }
+            .item{
+                background-color: blueviolet;
+                border:solid 1px black;
+                color:white;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="demo demo-start">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+            <div class="demo demo-center">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+            <div class="demo demo-end">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+            
+            <div class="demo demo-round">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+            <div class="demo demo-between">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+            <div class="demo demo-evenly">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+            </div>
+    </body>
+</html>

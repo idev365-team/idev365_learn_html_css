@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十四课.排版相关的样式</title>
+        <style>
+            h1{
+               font-family: 'Times New Roman', Times, serif;
+               font-size: 24px;
+               color: blueviolet;
+               font-weight:bolder;
+               font-style: italic;
+               
+            }
+            h1:nth-child(1){
+                text-decoration: overline;
+            }
+            h1:nth-child(2){
+                text-decoration: line-through;
+            }
+            h1:nth-child(3){
+                text-decoration: underline;
+            }
+            p{
+                text-indent: 2em;
+                line-height: 2em;
+                word-spacing: 5px;
+                letter-spacing: 5px;
+            }
+            
+            p:nth-child(3){
+                text-align: center;
+                border:solid 1px blueviolet;
+            }
+            
+            p:nth-child(4){
+                text-align: right;
+                border:solid 1px lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is my book.</p>
+        <p>1.我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+        <p>2.我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+        <p>3.我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+        <p>4.我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字</p>
+
+        <h1>我是一个标题</h1>
+        <h1>我是一个标题</h1>
+        <h1>我是一个标题</h1>
+        <h1>我是一个标题</h1>
+    </body>
+</html>

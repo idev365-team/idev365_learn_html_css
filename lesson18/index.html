@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>饿了么</title>
+        <link href="./theme.css" rel="stylesheet" />
+        <style>
+            .main{
+                height:1000px;
+            }
+            .search-bar-top{
+                height: 55px;
+                background-image: linear-gradient(90deg,#0af,#0085ff);
+                display: flex;
+                align-items: center;
+                padding:0 20px;
+            }
+            .search-bar-top .icon-location {
+                width: 16px;
+                height:20px;
+                vertical-align: middle;
+            }
+            .search-bar-top .place{
+                font-size: 23px;
+                color:white;
+                font-weight: bold;
+                vertical-align: middle;
+                margin:0 5px;
+            }
+            .search-bar-top .icon-arrow-down{
+                width:8px;
+                height:5px;
+                vertical-align: middle;
+            }
+            .search-bar-button{
+                height: 63px;
+                background-image: linear-gradient(90deg,#0af,#0085ff);
+                display: flex;
+                align-items: center;
+            }
+            
+            .search-bar-button .btn-search{
+                flex:1;
+                height:44px;
+                margin:0 20px;
+                background-color:white;
+                border-radius: 2px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .search-bar-button .icon-search{
+                width:18px;
+                height:18px;
+                vertical-align: middle;
+            }
+            
+            .search-bar-button .placeholder{
+                font-size:18px;
+                color:#999;
+                font-weight: 100;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+
+            .quick-nav{
+               
+            }
+            .quick-nav .row{
+                display: flex;
+                justify-content: space-around;
+                padding:6px 0;
+            }
+            .quick-nav a{
+                display: block;
+                text-decoration: none;
+                color: #666;
+                font-size: 16px;
+                text-align: center;
+            }
+            .quick-nav a img{
+                height: 55px;
+                width: 55px;
+            }
+            .quick-nav a div{
+
+            }
+            .banner-first{
+
+            }
+            .banner-scroll{
+
+            }
+            .shops{
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="search-bar-top">
+                <img class="icon icon-location" src="imgs/icon/icon_location.svg" >
+                <span class="place">奥玎宫廷别墅</span>
+                <img class="icon icon-arrow-down" src="imgs/icon/icon_arrow_down.svg" >
+            </div>
+            <div class="search-bar-button">
+                <div class="btn-search">
+                    <img class="icon-search" src="./imgs/icon/icon_search.svg"/>
+                    <span class="placeholder">搜索饿了么商家、商品名称</span>
+                </div>
+            </div>
+            <div class="quick-nav">
+                    <div class="row">
+                        <a href="#">
+                            <img src="./imgs/icon/menu01.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu02.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu03.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu06.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu05.png"/>
+                            <div>美食</div>
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <a href="#">
+                            <img src="./imgs/icon/menu06.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu07.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu08.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu09.png"/>
+                            <div>美食</div>
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/icon/menu10.png"/>
+                            <div>美食</div>
+                        </a>
+                    </div>
+            </div>
+            <div class="banner-first"></div>
+            <div class="banner-scroll"></div>
+            <div class="shops"></div>
+        </div>
+        <div class="footer">
+            <ul class="tab-menu">
+                <li class="active">
+                    <a>
+                        <i class="icon icon-home"></i>
+                        <div>首页</div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="icon icon-found"></i>
+                        <div>发现</div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="icon icon-order"></i>
+                        <div>订单</div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="icon icon-me"></i>
+                        <div>我的</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

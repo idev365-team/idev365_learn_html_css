@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十四课.排版相关的样式</title>
+        <style>
+            body{
+                background-color: #d7d8dd;
+            }
+            .main {
+                background-color: #d7d8dd;
+                width: 1600px;
+                height: 1200px;
+                position: relative;
+                margin:0 auto;
+            }
+            .page {
+                width: 1400px;
+                height: 790px;
+                background-color: #f5f4fa;
+                border-radius: 50px;
+                left: 50%;
+                top: 50%;
+                position: absolute;
+                transform: translateX(-50%) translateY(-50%);
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .left {
+                
+            }
+            .left .tab{
+                height:115px;
+            }
+            .left .tab::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .left .tab li{
+                list-style: none;
+                float: left;
+                width:110px;
+                height:40px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: bolder;
+                color:#D6D6E0;
+            }
+            .left .tab li.active{
+                color:#1D212A;
+            }   
+            .left .tab li.active::after{
+                content: '';
+                display: block;
+                height:2px;
+                width:70%;
+                background-color: #EC0100;
+                margin: 0 auto;
+            }
+            .left .calendar{
+                list-style: none;
+            }
+            .left .calendar li{
+                height: 80px;
+                color:#CCCCD6;
+                font-size:25px;
+                position: relative;
+                box-sizing: border-box;
+            }
+            .left .calendar li span{
+                position: absolute;
+                top:10px;
+                left:27px;
+                font-size: 9px;
+            }
+            .left .calendar li div{
+                margin-left:66px;
+                font-size:30px;
+                font-weight: bolder;
+            }
+            .left .calendar li.active{
+                color: #1C232D;
+            }
+            .left .btnBack{
+                margin-left:108px;
+            }
+            .middle {
+                
+            }
+            .right {
+                
+            }
+
+            .right .tab{
+                height:115px;
+            }
+            .right .tab::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .right .tab li{
+                list-style: none;
+                float: left;
+                width:110px;
+                height:40px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: bolder;
+                color:#D6D6E0;
+            }
+            .right .tab li.active{
+                color:#1D212A;
+            }   
+            .right .tab li.active::after{
+                content: '';
+                display: block;
+                height:2px;
+                width:70%;
+                background-color: #EC0100;
+                margin: 0 auto;
+            }
+            .right .calendar{
+                list-style: none;
+            }
+            .right .calendar li{
+                height: 45px;
+                color:#CCCCD6;
+                font-size:18px;
+                position: relative;
+                box-sizing: border-box;
+                border-bottom: solid 1px #EBEAF2;
+            }
+            .right .calendar li span{
+                position: absolute;
+                top:10px;
+                left:27px;
+                font-size: 9px;
+            }
+            .right .calendar li div{
+                margin-left:66px;
+                font-size:30px;
+                font-weight: bolder;
+            }
+            .right .calendar li.active{
+                color: #1C232D;
+            }
+            .right .btnBack{
+                margin-left:108px;
+            }
+            .right .title{
+                color:#1C232D;
+                font-size: 26px;
+                font-weight: bolder;
+                margin-left: 60px;
+            }
+
+            .middle .phoneContainer{
+                text-align:center;
+                margin-top: 80px;
+            }
+            .middle .phoneContainer img{
+                box-shadow: 0 7px 15px #9BB6D1;
+                border-radius: 30px;
+            }
+            .player{
+                width:230px;
+                height:60px;
+                background-color: #1B222C;
+                border-radius: 12px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 18px;
+                margin:0 auto;
+                margin-top:60px;
+            }
+            .player .btnPause{
+                margin:0 40px;
+            }
+
+            .priceArea{
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            .priceArea .price{
+                font-size:20px;
+                color:gray;
+            }
+            .priceArea .price .big{
+                font-size: 30px;
+                color:red;
+            }
+            .priceArea .orgPrice{
+                color:gray;
+                font-size:14px;
+                text-decoration: line-through;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="page">
+                <div class="left">
+                    <ul class="tab">
+                        <li>TRENDS</li>
+                        <li>ARTISTS</li>
+                        <li class="active">ALBUMS</li>
+                    </ul>
+                    <ul class="calendar">
+                        <li>
+                            <span>01</span>
+                            <div>JANUARY</div>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <div>FEBRUARY</div>
+                        </li>
+                        <li class="active">
+                            <span>03</span>
+                            <div>MARCH</div>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <div>APPIL</div>
+                        </li>
+                        <li>
+                            <span>05</span>
+                            <div>MAY</div>
+                        </li>
+                        <li>
+                            <span>06</span>
+                            <div>JUNE</div>
+                        </li>
+                    </ul>
+                    <div class="btnBack">
+                        BACK
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="phoneContainer">
+                        <img src="./cover.png" class="" />
+                    </div>
+                    <div class="player">
+                            <img class="btnLeft" src="icons/btnLeft.svg" />
+                            <img class="btnPause" src="icons/btnPause.svg" />
+                            <img class="btnRight" src="icons/btnRight.svg" />
+                    </div>
+                    <div class="priceArea">
+                            <span class="price">现价:¥<span class="big">128</span></span>
+                            <span class="orgPrice">参考价:¥128</span>
+                    </div>
+                </div>
+                <div class="right">
+                        <ul class="tab">
+                            <li>ALBUMS</li>
+                            <li>NIRVANA</li>
+                            <li>NEVERMIND</li>
+                        </ul>
+                        <div class="title">NEVERMIND</div>
+                        <ul class="calendar">
+                            <li>
+                                <span>01</span>
+                                <div>JANUARY</div>
+                            </li>
+                            <li>
+                                <span>02</span>
+                                <div>FEBRUARY</div>
+                            </li>
+                            <li class="active">
+                                <span>03</span>
+                                <div>MARCH</div>
+                            </li>
+                            <li>
+                                <span>04</span>
+                                <div>APPIL</div>
+                            </li>
+                            <li>
+                                <span>05</span>
+                                <div>MAY</div>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <div>JUNE</div>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <div>JUNE</div>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <div>JUNE</div>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <div>JUNE</div>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <div>JUNE</div>
+                            </li>
+                        </ul>
+                        <div class="btnBack">
+                            BACK
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>第九课.认识表单</title>
+        <style>
+            form{
+                border:dashed 1px blueviolet;
+                width:300px;
+                margin:0 auto;
+                padding:10px;
+                border-radius: 5px;
+                color:blueviolet;
+            }
+            label{
+                width:100px;
+                display: inline-block;
+            }
+            .inputSingle{
+                width:180px;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+                height:30px;
+            }
+            textarea{
+                width:180px;
+                height:80px;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+            }
+            .btnSubmit{
+                width:100px;
+                font-size:20px;
+                color: blueviolet;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+            }
+            .row{
+                margin-bottom:5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/login">
+            <h1 class="row">登陆</h1>
+            <div class="row">
+                <label>用户名：</label>
+                <input class="inputSingle" type="text"/>
+            </div>
+            <div  class="row">
+                <label>密&nbsp;&nbsp;码：</label>
+                <input class="inputSingle"  type="password" />
+            </div>
+            <div class="row">
+                <label>备&nbsp;&nbsp;注：</label>
+                <textarea></textarea>
+            </div>
+            <div class="row">
+                <input type="checkbox" checked/>
+                已阅读协议，同意
+            </div>
+            <div class="row">
+                    <input class="btnSubmit" type="submit" value="提交"/>
+            </div>
+            
+        </form>
+    </body>
+</html>

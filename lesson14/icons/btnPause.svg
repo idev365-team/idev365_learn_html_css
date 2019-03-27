@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>btnPause</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btnPause" fill="#CCCCD6">
+            <path d="M4,2 L9,2 L9,23 L4,23 L4,2 Z M16,2 L21,2 L21,23 L16,23 L16,2 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

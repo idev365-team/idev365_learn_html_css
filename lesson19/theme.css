@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+}
+
+.footer{
+    border-top:solid 1px rgb(236, 236, 236);
+    height: 62px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    box-shadow: 0 0 5px rgb(236, 234, 234); 
+}
+.footer .tab-menu{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+.footer .tab-menu li{
+    flex:1;
+}
+.footer .tab-menu li a{
+    text-align: center;
+    display: block;
+    padding:10px 0;
+    color:#8e8e93;
+    font-size: 14px;
+}
+.footer .tab-menu li a .icon{
+    width:23px;
+    height:23px;
+    display: block;
+    margin: 0 auto 2px auto;
+    background-size: contain;
+}
+.footer .tab-menu li a .icon.icon-home{
+    background-image: url("./imgs/icon/tab_item_home.svg");
+}
+.footer .tab-menu li a .icon.icon-found{
+    background-image: url("./imgs/icon/tab_item_found.svg");
+}
+.footer .tab-menu li a .icon.icon-order{
+    background-image: url("./imgs/icon/tab_item_order.svg");
+}
+.footer .tab-menu li a .icon.icon-me{
+    background-image: url("./imgs/icon/tab_item_me.svg");
+}
+
+.footer .tab-menu li.active a{
+    color:#0085ff;
+}
+
+.footer .tab-menu li.active a .icon.icon-home{
+    background-image: url("./imgs/icon/tab_item_home_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-found{
+    background-image: url("./imgs/icon/tab_item_found_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-order{
+    background-image: url("./imgs/icon/tab_item_order_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-me{
+    background-image: url("./imgs/icon/tab_item_me_active.svg");
+}
+
+.main{
+    margin-bottom: 64px;
+}
+.main .btn-top{
+    position: fixed;
+    right: 10px;
+    bottom:84px;
+    width:52px;
+    height:52px;
+    background-color: white;
+    border-radius: 50%;
+    border:solid 1px  #999;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .btn-top .icon{
+    width:24px;
+    height:24px;
+}
+.main .btn-top .icon-top{
+
+}
+.search-bar-top{
+    height: 55px;
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+}
+.search-bar-top .icon-location {
+    width: 16px;
+    height:20px;
+    vertical-align: middle;
+}
+.search-bar-top .place{
+    font-size: 23px;
+    color:white;
+    font-weight: bold;
+    vertical-align: middle;
+    margin:0 5px;
+}
+.search-bar-top .icon-arrow-down{
+    width:8px;
+    height:5px;
+    vertical-align: middle;
+}
+.search-bar-button{
+    height: 63px;
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-button .btn-search{
+    flex:1;
+    height:44px;
+    margin:0 20px;
+    background-color:white;
+    border-radius: 2px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar-button .icon-search{
+    width:18px;
+    height:18px;
+    vertical-align: middle;
+}
+
+.search-bar-button .placeholder{
+    font-size:18px;
+    color:#999;
+    font-weight: 100;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+.quick-nav{
+    padding-bottom: 34px;
+ }
+ .quick-nav .row{
+     display: flex;
+     justify-content: space-around;
+     padding:6px 0;
+ }
+ .quick-nav a{
+     display: block;
+     text-decoration: none;
+     color: #666;
+     font-size: 15px;
+     text-align: center;
+ }
+ .quick-nav a img{
+     height: 55px;
+     width: 55px;
+ }
+ .quick-nav a div{
+
+ }
+
+ /* Banner 区域定义 */
+ 
+ .container{
+    padding:0 10px;
+}
+.banner-first{
+    box-sizing: border-box;
+    height:135px;
+    margin-bottom: 5px; 
+    background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
+    padding:14px 18px;
+}
+.banner-first .left{
+    float: left;
+
+}
+.banner-first .left .title{
+    font-size:23px;
+    font-weight: bold;
+}
+.banner-first .left .desc{
+    font-size: 17px;
+    color: #777;
+    margin:3px 0;
+}
+.banner-first .left .btn-buy{
+    font-size: 15px;
+    font-weight: 700;
+    color: #af8260;
+}
+.banner-first .right{
+    float:right;
+}
+.banner-first .right{
+    width:173px;
+    height:115px;
+}
+.banner-scroll{
+    box-sizing: border-box;
+    height:108px;
+    overflow: hidden;
+    position: relative;
+}
+.banner-scroll .item{
+    width:100%;
+    height: 100%;
+    background-size: contain;
+}
+.banner-scroll .tips{
+    position: absolute;
+    right:5px;
+    bottom: 0;
+    width: 67px;
+    height: 23px;
+    border-radius: 11.5px;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+}
+
+/* 商家 */
+
+.shops{
+}
+.title-bar{
+    margin:10px 10px;
+    height:44px;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+}
+.title-bar::before{
+    display: inline-block;
+    content: "";
+    width:25px;
+    height:1px;
+    background-color: black;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.title-bar::after{
+    display: inline-block;
+    content: "";
+    width:25px;
+    height:1px;
+    background-color: black;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.filter-bar{
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    margin-bottom: 10px;
+}
+.filter-bar .item{
+    flex-grow:1;
+    color: #666;
+}
+.filter-bar .item span{
+    vertical-align: middle;
+}
+.filter-bar .item .icon{
+    vertical-align: middle;
+}
+.filter-bar .item .icon.icon-arrow-down{
+    width:7px;
+    height:4px;
+}
+
+.filter-bar .item .icon.icon-filter{
+    width:14px;
+    height:14px;
+}
+.filter-bar .item{
+    text-align: center;
+}
+.filter-bar .item:first-child{
+    text-align: left;
+}            
+.filter-bar .item:last-child{
+    text-align: right;
+}
+
+.shop-list-container{ 
+}
+
+/* 没有搜索结果 */
+.not-found-result{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.shop-list-container .not-found-result .img-not-found{
+    width:246px;
+    height:246px;
+    background-size: contain;
+}
+
+.shop-list-container .not-found-result .title{
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.shop-list-container .not-found-result .desc{
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.shop-list-container .not-found-result .btn-login{
+    width:147px;
+    height:43px;
+    color:white;
+    background-color: #56d176;
+    border-radius: 3px;
+    line-height: 43px;
+    font-size: 14px;
+    display: inline-block;
+}

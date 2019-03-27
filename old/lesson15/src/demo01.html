@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十五课.CSS的盒子模型</title>
+        <style>
+            div{
+                border:solid 1px blueviolet;
+                height:60px;
+                width:300px;
+            }
+            span{
+                border:solid 1px green;
+                height:60px;
+                width:300px;
+            }
+            span:nth-child(3),span:nth-child(4){
+                background-color: blueviolet;
+                color:white;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>我是div，我是块级元素  block element</div>
+        <span>我是一个span，我是行级元素 inline element</span>
+        <span>还有一种元素,是行内块元素 inline block element</span>
+        <span>还有一种元素,是行内块元素 inline block element</span>
+    </body>
+</html>

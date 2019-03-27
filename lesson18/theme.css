@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+
+.footer{
+    border-top:solid 1px rgb(236, 236, 236);
+    height: 62px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    box-shadow: 0 0 5px rgb(236, 234, 234); 
+}
+.footer .tab-menu{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+.footer .tab-menu li{
+    flex:1;
+}
+.footer .tab-menu li a{
+    text-align: center;
+    display: block;
+    padding:10px 0;
+    color:#8e8e93;
+    font-size: 14px;
+}
+.footer .tab-menu li a .icon{
+    width:23px;
+    height:23px;
+    display: block;
+    margin: 0 auto 2px auto;
+    background-size: contain;
+}
+.footer .tab-menu li a .icon.icon-home{
+    background-image: url("./imgs/icon/tab_item_home.svg");
+}
+.footer .tab-menu li a .icon.icon-found{
+    background-image: url("./imgs/icon/tab_item_found.svg");
+}
+.footer .tab-menu li a .icon.icon-order{
+    background-image: url("./imgs/icon/tab_item_order.svg");
+}
+.footer .tab-menu li a .icon.icon-me{
+    background-image: url("./imgs/icon/tab_item_me.svg");
+}
+
+.footer .tab-menu li.active a{
+    color:#0085ff;
+}
+
+.footer .tab-menu li.active a .icon.icon-home{
+    background-image: url("./imgs/icon/tab_item_home_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-found{
+    background-image: url("./imgs/icon/tab_item_found_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-order{
+    background-image: url("./imgs/icon/tab_item_order_active.svg");
+}
+.footer .tab-menu li.active a .icon.icon-me{
+    background-image: url("./imgs/icon/tab_item_me_active.svg");
+}

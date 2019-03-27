@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十六课.常用CSS布局-Float布局</title>
+        <style>
+            .normal{
+                background-color: orange;
+                height:80px;
+            }
+            .demo{
+                width:100px;
+                height:100px;
+                background-color: blueviolet;
+                color: white;
+                float: left;
+                margin-left: 10px;
+            }
+
+            .demoRight{
+                width:100px;
+                height:100px;
+                background-color: blueviolet;
+                color: white;
+                float: right;
+            }
+            .cleanFloat{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="demo">1浮动元素</div>
+            <div class="demo">2浮动元素</div>
+            <div class="demoRight">3浮动元素</div>
+            <div class="cleanFloat"></div>
+        <div class="normal">普通样式</div>
+    </body>
+</html>

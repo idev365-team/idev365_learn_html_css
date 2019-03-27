@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十五课.CSS的盒子模型</title>
+        <style>
+            div{
+                border:solid 1px blue;
+                height:60px;
+                width:100px;
+            }
+            span{
+                border:solid 1px green;
+                height:60px;
+                width:100px;
+            }
+            .mySpan{
+                display: inline-block;
+                background-color:orange;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div>我是div,block element</div>
+        <span>我是span,inline element</span>
+        <span class="mySpan">我是span,inline element</span>
+        <span>我是span,inline element</span>
+    </body>
+</html>

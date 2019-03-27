@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>第十五课.CSS的盒子模型</title>
+        <style>
+            body{
+                margin:0;
+            }
+            div{
+                font-size:30px;
+                border:dashed 10px orange;
+                margin:20px;
+                padding:20px;
+                height:100px;
+                box-sizing: border-box;
+            }
+            .myFirstDiv{
+                margin-bottom: 30px;
+            }
+            .mySecondDiv{
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="myFirstDiv">1我是div</div>
+            <div class="mySecondDiv">2我是div</div>
+    </body>
+</html>

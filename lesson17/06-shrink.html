@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十七课.Flex布局-shrink</title>
+        <style>
+         .demo{
+                border:solid 2px orange;
+                display: flex;
+
+            }
+            .item{
+                background-color: blueviolet;
+                border:solid 1px black;
+                color:white;
+                padding:20px;
+                width:300px;
+            }
+            .a{
+                flex-shrink:1;
+                flex-grow: 1;
+            }
+            .b{
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            .c{
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            .test{
+                border:solid 1px red;
+                border-style: solid;
+                border-width: 1px;
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="demo">
+                    <div class="item a">A</div>
+                    <div class="item b">B</div>
+                    <div class="item c">C</div>
+            </div>
+    </body>
+</html>

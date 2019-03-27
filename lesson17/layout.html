@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十七课.Flex布局-封装常用布局</title>
+        <style>
+            .flex{
+                display: flex;
+            }
+            .flex-start{
+                justify-content: flex-start;
+            }
+            .flex-center{
+                justify-content: center;
+            }
+            .flex-end{
+                justify-content: flex-end;
+            }
+            .flex-around{
+                justify-content: space-around;
+            }
+            .flex-between{
+                justify-content: space-between;
+            }
+            .flex-evenly{
+                justify-content:space-evenly;
+            }
+
+            .flex-2-start{
+                align-items: flex-start;
+            }
+            .flex-2-center{
+                align-items: center;
+            }
+            .flex-2-end{
+                align-items: flex-end;
+            }
+            .flex-2-stretch{
+                align-items: stretch;
+            }
+
+            .flex-grow-1{
+                flex-grow: 1;
+            }
+            .flex-grow-2{
+                flex-grow: 2;
+            }
+            .flex-grow-3{
+                flex-grow: 3;
+            }
+            .flex-grow-4{
+                flex-grow: 4;
+            }
+            .flex-grow-5{
+                flex-grow: 5;
+            }
+            .flex-direct-row{
+                flex-direction: row;
+            }
+            
+            .flex-direct-row-reverse{
+                flex-direction: row-reverse;
+            }
+
+            
+            .flex-direct-column{
+                flex-direction: column;
+            }
+            
+            .flex-direct-column-reverse{
+                flex-direction: column-reverse;
+            }
+
+            .demo{
+                border:solid 2px orange;
+                margin-bottom: 10px;
+                min-height:200px;
+            }
+            .item{
+                background-color: blueviolet;
+                border:solid 1px black;
+                color:white;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+            <h1>主轴方向样式</h1>
+            <div class="demo flex">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-center">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-end">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-around">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-between">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-evenly">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+
+    <h1>侧轴方向样式</h1>
+            <div class="demo flex flex-2-start">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-center flex-2-center">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-end flex-2-end">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-around flex-2-stretch">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-between">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <div class="demo flex flex-evenly">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            <h1>主轴方向自动增长样式</h1>
+            <div class="demo flex">
+                <div class="item flex-grow-1">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            
+            <div class="demo flex">
+                <div class="item flex-grow-1">A</div>
+                <div class="item flex-grow-2">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+                
+            <div class="demo flex flex-2-center">
+                <div class="item flex-grow-1">A</div>
+                <div class="item flex-grow-2">B</div>
+                <div class="item flex-grow-3">C</div>
+                <div class="item flex-grow-4">D</div>
+            </div>
+
+            <h1>主轴方向变化样式</h1>
+            <div class="demo flex flex-direct-row">
+                <div class="item flex-grow-1">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+
+            
+        <div class="demo flex flex-direct-row-reverse">
+                <div class="item flex-grow-1">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+            
+        <div class="demo flex flex-direct-column">
+                <div class="item flex-grow-1">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+
+            
+        <div class="demo flex flex-direct-column-reverse">
+                <div class="item flex-grow-1">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+            </div>
+    </body>
+</html>

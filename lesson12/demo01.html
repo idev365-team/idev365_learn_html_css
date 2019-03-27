@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十二课.表单进阶</title>
+        <style>
+            .row{
+                display: block;
+            }
+            form{
+                border:dashed 3px blueviolet;
+                border-radius: 5px;
+                margin:20px;
+                padding:20px;
+            }
+            h1{
+                text-align: center;
+                color: blueviolet;
+            }
+            .title{
+                width:150px;
+                text-align: right;
+                display: inline-block;
+            }
+            .row{
+                width:80%;
+                margin:10px auto;
+            }
+            .btnSubmit{
+                border:solid 1px blueviolet;
+                background-color: blueviolet;
+                border-radius: 5px;
+                padding:5px 20px;
+                color:white;
+                margin:0 auto;
+                display: block;
+                font-size:18px;
+            }
+            select{
+                width:200px;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+                line-height: 30px;
+                height:30px;
+            }
+            textarea{
+                height:100px;
+                width:200px;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+            }
+            input[type=text]{
+                width:200px;
+                border:solid 1px blueviolet;
+                border-radius: 5px;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/advice">
+            <h1>意见反馈</h1>
+            <div class="row">
+                    <label class="title">姓名：</label>
+                    <input type="text"/>
+            </div>
+            <div class="row">
+                <span class="title">选择您的性别:</span>
+                <label><input name="gender" type="radio"/>男</label>
+                <label><input name="gender" type="radio"/>女</label>
+            </div>
+            <div class="row">
+                <span class="title">选择您的爱好:</span>
+                <label><input name="hoppy" type="checkbox"/>看书</label>
+                <label><input name="hoppy" type="checkbox"/>跑步</label>
+                <label><input name="hoppy" type="checkbox"/>音乐</label>
+            </div>
+            
+            <div class="row">
+                <label class="title">学历程度：</label>
+                <select name="eduSchool">
+                    <option>小学</option>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option>大专及以上</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="title">反馈意见：</label>
+                <textarea name="message"></textarea>
+            </div>
+            <input class="btnSubmit" type="submit" value="提交意见"/>
+        </form>
+        
+    </body>
+</html>
